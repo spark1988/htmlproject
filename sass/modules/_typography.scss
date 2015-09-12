@@ -60,3 +60,20 @@ color: $primary-color;
 .heading-dark {
     color: $dark-color;
 }
+.list-comments li {
+padding: 10px 0 5px 0;
+@include add-border (1px, #cccccc , bottom);
+}
+.list-comments li:last-child {
+    border: 0;
+}
+
+.list-comments img{
+
+        width: 100px;
+}
+
+.list-comments {
+    margin: 0;
+    padding: 0;
+}

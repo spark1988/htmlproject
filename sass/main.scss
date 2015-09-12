@@ -4,41 +4,32 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+/* Base */
+
 @import "base/variables";
 @import "base/mixins";
 @import "base/normalize";
 @import "base/base";
-@import "modules/forms";
+
+/* Modules */
+
 @import "modules/blocks";
-@import "modules/sections";
-@import "modules/_typography";
 @import "modules/buttons";
-/*NavBar*/
+@import "modules/components";
+@import "modules/forms";
+@import "modules/sections";
+@import "modules/typography";
+
+/* LayOuts */
+
+@import "layouts/footer";
+@import "layouts/header";
+@import "layouts/nav";
+@import "layouts/blog";
 
 
 
-.navbar {
-width: 90%;
-margin: auto;
-@include add-border(1px, #e7e7e7, 'right-left');
-    min-height: 60px;
-    background: #fff;
-    margin-bottom: 30px;
-    border-color: #e7e7e7 !important;
-    
-    a {
-    color: $primary-color !important;
-        font-size: 20px;
-        letter-spacing: -0.5px;
-        padding-bottom: 24px !important;
-        padding-top: 20px !important;
-    }
-    
-    
-}
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    background: $primary-color !important;
-    color: #fff !important;}
 
 
 
@@ -47,6 +38,11 @@ font-family: $base-font-family;
 font-size: $base-font-size;
     line-height: 1.7em;
     color: $base-font-color;
+    text-decoration: none;
+    h4 {
+    font-size: 2em;
+        color: #479C56;
+    }
 
 }
 
@@ -60,42 +56,14 @@ input, textarea, button {
     @include border-radius(0px);
     
    }
-/*Section*/
-.section-showcase {
-    height: $showcase-height;
-   background: url(../img/showcase.jpg) no-repeat top center;
-    
-    .showcase-content {
-    padding: 110px 15px;
-        text-align: center;
-}
-    h1 {
-        font-size: 27px;
-    color: $primary-color;
-    }
+
+input {
+width: 50%;
+    height: 50px;
+    border-radius: 2%;
+    text-align: center;
 }
 
-
-.section-primary {
-
-    @include add-background ($primary-color);
-
-}
-.section-secondary {
-
-    @include add-background ($primary-color);
-
-}
-.section-light {
-
-    @include add-background (#CCCCCC);
-
-}
-.section-dark {
-
-    @include add-background ($primary-color);
-
-}
 
 
 

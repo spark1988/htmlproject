@@ -1,0 +1,36 @@
+/*Section*/
+.section-showcase {
+    height: $showcase-height;
+   background: url(../img/showcase.jpg) no-repeat top center;
+    
+    .showcase-content {
+    padding: 110px 15px;
+        text-align: center;
+}
+    h1 {
+        font-size: 27px;
+    color: $primary-color;
+    }
+}
+
+
+.section-primary {
+
+    @include add-background ($primary-color);
+
+}
+.section-secondary {
+
+    @include add-background ($primary-color);
+
+}
+.section-light {
+
+    @include add-background (#CCCCCC);
+
+}
+.section-dark {
+
+    @include add-background ($primary-color);
+
+}
